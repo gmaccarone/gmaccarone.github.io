@@ -149,10 +149,14 @@ into.
 # Conclusion
 There are many utilities that ship with `git` that allow you to see certain
 pieces of information about your repository's object store. Using these tools
-in concert can yield data that would otherwise be challenging to obtain.
-There will be a followup blog post to this one about writing a server side git
+in concert can yield data that would otherwise be challenging to obtain. There
+is another method to achieve a similar result using the index file and `git
+verify-pack` that I may write another blog post about.
+
+There will be a followup blog post to this one about writing a server-side git
 hook to prevent these large files from ever being committed to your repository.
-That hook will make use of some of the same utilities that were covered in this post.
+That hook will make use of some of the same utilities that were covered in this
+post.
 
 I hope this has been helpful to anyone who has found themselves trying to
 troubleshoot unwarranted repository growth. Feedback is certainly welcome, if
