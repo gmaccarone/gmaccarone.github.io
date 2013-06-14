@@ -7,10 +7,9 @@ categories: git
 
 If you manage [`git`][git] repositories it isn't uncommon to run into a problem
 where someone, maybe even yourself, commits a large file into a repository.
-Especially in repositories that have a large number of committers, you may not
-have visibility into all branches or changes that are being committed.  There
-are several commands that are part of `git` that will allow you to locate these
-large files/commits. 
+This is especially commin in repos with many committers where you not have
+visibility into every branch or commit.  Thankfully there are several commands
+that are part of `git` that will help you to locate these large files/commits. 
 
 NOTE: All instructions below will assume that you are working in a bare repo,
 not a cloned copy. If you don't have access to the repository on the server,
