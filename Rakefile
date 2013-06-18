@@ -1,5 +1,6 @@
 require 'erb'
 
+desc "Create a new post in _posts"
 task :post, [:title] do |t, args|
   d = Time.new
   file_date = d.strftime('%F')
