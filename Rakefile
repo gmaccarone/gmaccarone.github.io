@@ -5,7 +5,7 @@ task :post, [:title] do |t, args|
   d = Time.new
   file_date = d.strftime('%F')
   date = d.to_s
-  post_erb = ".templates/post.erb"
+  post_erb = "_templates/post.erb"
   title = args.title
   file_title = title.split.join('-').downcase
   filename = "_posts/#{file_date}-#{file_title}.markdown"
