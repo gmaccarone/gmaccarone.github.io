@@ -9,12 +9,12 @@ In my previous blog post on [Locating large objects in a git
 repository][llo], I covered some of the git utilities that can be used to
 identify large files in your repository. In this post I'd like to go over how
 to create a server-side hook that will block large files before they get into
-your repo. Many of the same utilities from the post referenced above will be
+your repo. Some of the same utilities from the post referenced above will be
 used in creating this hook.
 
 # What are server-side hooks?
 [Git hooks][githooks] allow you to perform actions at different points in the
-git workflow. Server-side hooks can be executed at certain specific phases of
+git push workflow. Server-side hooks are executed at certain specific phases of
 the push process:
 
 * `pre-receive`
@@ -54,23 +54,16 @@ repository. They must to be named to match the type of hook they are.
 # Which hook type should I use?
 
 Since we're looking to block an actual commit from happening, we would want to
-use either `pre-receive` or `update` hooks. The distinction here is that the
+use either a `pre-receive` or `update` hook. The distinction here is that the
 `pre-receive` will block **all updates** on a non-zero exit, whereas the
 `update` will only block the specific update for the ref which returns a
 non-zero exit. For this example I will choose to use `pre-receive` because I
-want to block the entire push if we find an object that is over my file size
+want to block the entire push if we find an object that is over the file size
 limit.
-
-# What utilities should I use?
-
-Many of the utilities we'll need to use for this hook are similar to the ones
-explained in my previous [post][llo]. The example hook that we will write will
-be in bash so that you can see the git utilities being called, and not have them
-be abstracted by another module (e.g. GitPython).
 
 # How does it work?
 
-The basic flow of the script/hook is as follows:
+The basic flow of this hook is as follows:
 
 1. Read stdin line by line for push information (`old-ref new-ref refname`)
 1. For every line you receive get a list of files that have changed.
@@ -85,6 +78,11 @@ branch deletion. On a branch creation the `old-ref` will be a null SHA1
 the `new-ref` will be a null SHA1. For the purposes of this hook, there should
 be nothing happening in a branch deletion that is of any importance to us, so we
 will want to skip looking at those types of operations.
+
+For this example I will use a bash script which calls out to the git utilities.
+I am choosing to do it this way so that we can discuss how each step works, and
+what is happening. Similar hooks could be written using modules designed to
+interact with git, such as [GitPython][gitpython] or [Grit][grit].
 
 # What does the script look like?
 
@@ -111,10 +109,12 @@ with that code at the end of execution.
 As you can see, it's trivial to put together a simple bash script that can
 enforce file size restrictions on pushes. Alternatively, it would be a
 relatively simple modification to allow this script to operate on total commit
-size. Also, knowing the core concepts required to perform a task like this makes
-it easier to port to using a git module in a different scripting language.
+size. Knowing the core concepts required to perform a task like this makes
+it easier to port it to using a git module in a different scripting language.
 
 [githooks]: https://www.kernel.org/pub/software/scm/git/docs/githooks.html
 [gitdiff]: https://www.kernel.org/pub/software/scm/git/docs/git-diff.html
 [gitcatfile]: https://www.kernel.org/pub/software/scm/git/docs/git-cat-file.html
+[gitpython]: http://gitorious.org/git-python
+[grit]: https://github.com/mojombo/grit
 [llo]: {% post_url 2013-06-13-locating-large-objects %}
