@@ -11,10 +11,6 @@ This is especially common in repos with many committers where you may not have
 visibility into every branch or commit.  Thankfully there are several commands
 that are part of `git` that will help you to locate these large files/commits. 
 
-NOTE: All instructions below will assume that you are working in a bare repo,
-not a cloned copy. If you don't have access to the repository on the server,
-run your clone with `--mirror` to get a local copy of the bare repo.
-
 # How do I get a list of commits for a repo?
 If you're reasonably certain that there was a recent commit that added this new
 large file, a quick way to identify it is using [`git rev-list`][rev-list]. From
