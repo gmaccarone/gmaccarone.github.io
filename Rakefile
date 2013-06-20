@@ -1,9 +1,9 @@
 require 'erb'
+d = Time.new
+file_date = d.strftime('%F')
 
 desc "Create a new post in _posts"
 task :post, [:title] do |t, args|
-  d = Time.new
-  file_date = d.strftime('%F')
   date = d.to_s
   post_erb = "_templates/post.erb"
   title = args.title
@@ -17,3 +17,5 @@ desc "Build amd serve"
 task :bs do |t|
   sh "jekyll build && jekyll serve"
 end
+
+task :update_date
