@@ -86,7 +86,7 @@ interact with git, such as [GitPython][gitpython] or [Grit][grit].
 
 # What does the script look like?
 
-{% gist gmaccarone/f293ff7dd56e549a06e1 %}
+{% gist f293ff7dd56e549a06e1 %}
 
 # Breakdown
 Let's explore the script a little bit, and go through the operations happening
