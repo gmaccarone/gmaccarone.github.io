@@ -13,9 +13,3 @@ task :post, [:title] do |t, args|
   File.open(filename, "w") { |file| file.write(content) }
 end
 
-desc "Build amd serve"
-task :bs do |t|
-  sh "jekyll build && jekyll serve"
-end
-
-task :update_date
