@@ -97,7 +97,8 @@ performing a [`git-diff`][gitdiff] with several options.
 * `--name-only` makes the output only contain the name of the files changed
 * `--diff-filter=ACMRT` limits the output of the diff to only contain additive
   operations.
-* `${oldref}..${newref}` generates the diff based on changes to be applied oldref by newref.
+* `${oldref}..${newref}` generates the diff based on changes to be applied to
+  oldref by newref.
 
 The next git operation is on line 23, where [`git cat-file`][gitcatfile] is used
 to obtain the object size of a file in a commit. When we encounter a file that
