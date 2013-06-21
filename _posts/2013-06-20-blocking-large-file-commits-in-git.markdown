@@ -102,8 +102,8 @@ performing a [`git-diff`][gitdiff] with several options.
 The next git operation is on line 23, where [`git cat-file`][gitcatfile] is used
 to obtain the object size of a file in a commit. When we encounter a file that
 is above our defined MAXSIZE (line 27), the script outputs some actionable
-information to the user. Also, we set out EXIT code to be non-zero, and exit
-with that code at the end of execution.
+information to the user. When the filesize condition is met, the EXIT variable
+is set to a non-zero value, and we exit with that at the end of execution.
 
 # Conclusion
 As you can see, it's trivial to put together a simple bash script that can
