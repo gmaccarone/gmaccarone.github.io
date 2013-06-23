@@ -34,7 +34,7 @@ the push process:
 
 * `post-receive`
   
-  Fires once after all refs have been updated, and get's the same input on
+  Fires once after all refs have been updated, and gets the same input on
   stdin as the `pre-receive` hook. As with the hooks before it, stdout and
   stderr are passed back to the client for messaging. Generally this type of
   hook is only used for notification and/or messaging to clients about the push
