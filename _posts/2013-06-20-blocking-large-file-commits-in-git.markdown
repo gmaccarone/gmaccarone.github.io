@@ -66,7 +66,7 @@ limit.
 The basic flow of this hook is as follows:
 
 1. Read stdin line by line for push information (`old-ref new-ref refname`)
-1. For every line you receive get a list of files that have changed.
+1. For each line you receive, obtain a list of files that have changed.
 1. Inspect each file's object and get its size in bytes.
 1. Compare that size to a limit that you have set.
 1. Provide useful feedback to the user about any exceptions that are rasied.
