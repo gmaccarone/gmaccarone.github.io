@@ -138,7 +138,7 @@ Alternatively, you could sum up the blobs for each individual commit, in case
 the issue isn't one large file, but several smaller ones.
 
 As mentioned before, you can take the commit SHA1 and pass it to `git branch
---contains <SHA1>` to see which branches this large file may have been merged
+-a --contains <SHA1>` to see which branches this large file may have been merged
 into.
 
 # Conclusion
