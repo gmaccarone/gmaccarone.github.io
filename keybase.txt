@@ -6,73 +6,47 @@ I hereby claim:
 
   * I am an admin of http://gregmac.net
   * I am gmacisme (https://keybase.io/gmacisme) on keybase.
-  * I have a public key with fingerprint E3CD C3A7 9109 DCD4 FED5  89CE CD1A 5BB4 D454 6CF4
+  * I have a public key ASB7xeoEJRnuVRLycWyQOeeE5hj4vS01H_7RBE654dD_dgo
 
-To claim this, I am signing this object:
+To do so, I am signing this object:
 
 {
-    "body": {
-        "client": {
-            "name": "keybase.io node.js client",
-            "version": "0.4.11"
-        },
-        "key": {
-            "fingerprint": "e3cdc3a79109dcd4fed589cecd1a5bb4d4546cf4",
-            "host": "keybase.io",
-            "key_id": "CD1A5BB4D4546CF4",
-            "uid": "a674be714b9188693f91a11ec450b300",
-            "username": "gmacisme"
-        },
-        "merkle_root": {
-            "ctime": 1404749940,
-            "hash": "fa6a98c4ed630c3095914db7a234bc3d4bd61c97d75a7d98f0e25fa48463a2511e6774808fb06811300ef9322b28b3bd790b38361cb3408cbd79d2ba18e2c598",
-            "seqno": 25993
-        },
-        "service": {
-            "hostname": "gregmac.net",
-            "protocol": "http:"
-        },
-        "type": "web_service_binding",
-        "version": 1
+  "body": {
+    "key": {
+      "eldest_kid": "01206fcec6f5fb70541470200b1ded127ad1b7efdbae520cf423202daf19688520f90a",
+      "host": "keybase.io",
+      "kid": "01207bc5ea042519ee5512f2716c9039e784e618f8bd2d351ffed1044eb9e1d0ff760a",
+      "uid": "a674be714b9188693f91a11ec450b300",
+      "username": "gmacisme"
     },
-    "ctime": 1404750064,
-    "expire_in": 157680000,
-    "prev": "53a0896d6f72d1071d51bc9d599891d069c3bce6f0b7e2c4ece3a020120c38f6",
-    "seqno": 5,
-    "tag": "signature"
+    "merkle_root": {
+      "ctime": 1533129000,
+      "hash": "074dfe670c5953de98b220e6f4a5264a964c9c03707ca483283a92daf11a543abe284263aba117cfba1e8887f334a6fc6247df6ea562f5102236f621aa10352a",
+      "hash_meta": "3ae8d49cda7b3eeb24c26bc574f07fb6d8bb5b16e6ea567dcbc2299ef0eae481",
+      "seqno": 3366826
+    },
+    "service": {
+      "entropy": "c1FTMmnvNjkD6cUTgkCeVumG",
+      "hostname": "gregmac.net",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.3.0"
+  },
+  "ctime": 1533129008,
+  "expire_in": 504576000,
+  "prev": "4c5003637ddeb2ba2110fdc7c8056b03b9ddae7663c068072e749b592096be47",
+  "seqno": 16,
+  "tag": "signature"
 }
 
-with the aforementioned key, yielding the PGP signature:
+which yields the signature:
 
------BEGIN PGP MESSAGE-----
-Version: GnuPG v1
-
-owFVkntMFEccx48rVqq2WqFABQw9jDQtpfuYfVEpCAiJKHhAJSnVc3dmFhbh9rw9
-sXgVNXqh2FC00ofxVSivFiSVHJSoJTah0khAMSCJVqVQiVRIjEB9tGJ3qaZ2/5qd
-+fy+8/3+frP/xedMZp+eJTne/qyCKZ/uMcmUeeqXO26LpKJiS4zbAgsUbHcZK7tY
-iC0xls24WBI1HK2o4XYV4eh8LfwJE2Upwk5NUe06RUSDaJK07IgyeKNaVuy52Olw
-KoaYBdMQQVrkBJIQEERAxojhBYghIkVGkgACDGChDHTNPFVz/e9ay6ymTUH6bmIS
-uZJJSABJBp+YbPBbZw9ElgMS5kggCSTPswItC6RIkhgChpBogjBADTufZMotFKGi
-6UvdbyF2bi7ANqeqzqaGLsVASEAADggCIHRHopanF8kiKwo8BBixNAFpQmAEEiCJ
-EykaSJBGQEIsCQUOcYzIIYGXCUwxsgh4wNIixehmWI4DPMHLEsHyJKm7wrJAU5RE
-8RItIU7QnfK0riHRgOChsYMoSSR5TEFG4PUIGt5iVy0xFCMI9A7j11mkQGzYNrr2
-NJwTG/mi7dgYkcOpulSoFugHeS6XI8aI7Cp2GOA2LNm0pn81bJJiR/rInh0qqaPP
-toMhCBZEWfCHDsWJbYpBMBzLE/pn3IOLdE2GFgleYBErcxQiCY5EDClBAemOeYFE
-BCtAWoKYlQmJ02MBDLFeQREkpbeUl9n/QjK6TzFXl9SUXLvo2urUp1VmDvU1+ZhN
-z88xG6/WNO+FRU+fcrNn4aOg9uak6kDbnAcfVUzefBC3lvn+Z1vdyj5b9y736s/h
-ZMqZE79Nj1hTxwMu3q1XZ/qXXQgadrf3nvsVvRL0KOGxcIi4fevKl2uyJzxlmzd5
-gN/gArPferKE/65c6Ers3OI+8rF4VssH3J7azyJiL+R/EJkRsuFE2L7OjtF1w8dt
-w+jwor1i7Gvx3vKejV9bQ2TT4zbz6VcbmlxpB+Ye77taVZcyvPde/pG0QfPJwDvN
-xbf6HaULSy/L82mLT9KppdujnS3SlvGLqePrHjMhnrx5Ly/fnwA73s6rX9N+/j1P
-Rl96TaOn9EzC5ZYVneGroCN3skS7HsPE3ljC7fKr6a4f9zclvt61oOjT9J2nvUFL
-M9tG3JEBPy58s+Ng07H83mvl7t4gK/eT12fOG7GXWuKzIh9eSwwrbI4tLZsAbXHe
-gam1rrR966s9X3gX3HvYOF3XlXxzoyM48Pexg+83DdXcbvgKy76tbVfnZyT7W4cq
-l6mftGfnDJ+9XblYrs3zpo+9tDMla6hy9bYrEf65u/9M7R1cHNf6wzRFrai5fi4w
-ICB5KrFiJj7AfP4v+7c9x+7aKjZcjSgJs3KX7p6cmmEHRq177vc1VInBEdaM7Hd7
-w7KzQmuU+60DR28cKnxn+cHg5pkrb/0NK64dJkb/SNn0je+BkMFkbW5fzvbdtZmN
-pRlVEROrRkKPVhf/Aw==
-=QG4B
------END PGP MESSAGE-----
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEge8XqBCUZ7lUS8nFskDnnhOYY+L0tNR/+0QROueHQ/3YKp3BheWxvYWTESpcCEMQgTFADY33esrohEP3HyAVrA7ndrnZjwGgHLnSbWSCWvkfEILUDDzlYydUHeBNFSsYSZVgErkqrIGjuBehbItdR7gSwAgHCo3NpZ8RAydzROfqlg5euOJpzIeW9fn8S66+IL0mYkEoLGEOKWWsJVDpl2Bbn5YSkvHDg68xwcDDnFx4JiP8ub512FsLEC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIO1rm0Vup6QeM48i3p729StbmSZZ5lt2XTrpIaxrd7bfo3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
